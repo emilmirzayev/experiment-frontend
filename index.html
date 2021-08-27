@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Experiment</title>
+    <link rel="stylesheet" href="//cdn.datatables.net/1.10.25/css/jquery.dataTables.min.css"/>
+    <link rel="stylesheet" href="public/assets/css/style.css"/>
+    <script type="application/javascript" src="public/assets/js/scripts.js"></script>
+    <script type="application/javascript" src="//cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js"></script>
+</head>
+<body>
+<div class="container" id="container">
+    <div class="first-page-box">
+        <div class="row">
+            <div class="col-12">
+                <blockquote class="blockquote text-center">
+                    <p class="mb-0">>Welcome text and the description of the task.</p>
+                </blockquote>
+            </div>
+        </div>
+    </div>
+    <div class="button-box">
+        <div class="row">
+            <div class="col text-center">
+                <button type="button" class="btn btn-primary start-button">Start the test</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/x-tmpl" id="tmpl-demo">
+    <div class="task-description">
+        <div class="row">
+            <div class="col-2 timer">
+                <p>REMAINING TIME: <span id="time">00:00</span></p>
+            </div>
+            <div class="col-10 text">
+                <blockquote class="blockquote text-center">
+                    <p class="mb-0">{%=o.task_description%}</p>
+                </blockquote>
+            </div>
+        </div>
+    </div>
+    <div class="task">
+        <div class="row">
+            <div class="col-6">
+                <div class="task-buttons">
+                    <table class="table task-buttons-table">
+                        <tr>
+                            {% for (var i=0; i<o.columns.length; i++) { %}
+                            <td>
+                                <label><input type="checkbox" class="hide-column" id="hide-column-{%=i+1%}" value="{%=o.columns[i]%}" /> Hide Column {%=o.columns[i]%}</label>
+                            </td>
+                            {% } %}
+                        </tr>
+                    </table>
+                </div>
+                <div class="task-container">
+                    <table class="table table-striped task-data-table"></table>
+                    <div class="task-data-counts">Total selected: <span class="total-selected">0</span></div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="task-recommendation">
+                            <h2>RECOMMENDATIONS</h2>
+                        </div>
+                        <div class="task-container">
+                            <table class="table table-striped task-recommendation-data-table"></tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="task-final">
+                            <h2>FINAL SELECTION</h2>
+                        </div>
+                        <div class="task-container">
+                            <table  class="table table-striped task-final-data-table"></table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="task-proces">
+        <div class="row">
+            <div class="col-6 text-right offset-6">
+                <a href="start.html" class="btn btn-primary proceed-button">CONFIRM & PROCEED TO QUESTIONNAIRE</a>
+            </div>
+        </div>
+    </div>
+</script>
+</body>
+</html>

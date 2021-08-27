@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Experiment</title>
+    <link rel="stylesheet" href="//cdn.datatables.net/1.10.25/css/jquery.dataTables.min.css"/>
+    <link rel="stylesheet" href="public/assets/css/style.css"/>
+    <script type="application/javascript" src="public/assets/js/scripts.js"></script>
+    <script type="application/javascript" src="//cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="task-description">
+        <div class="row">
+            <div class="col-12">
+                <blockquote class="blockquote text-center">
+                    <p class="mb-0">>The description of the task</p>
+                </blockquote>
+            </div>
+        </div>
+    </div>
+    <div class="task">
+        <div class="row">
+            <div class="col-6">
+                <div class="task-buttons">
+                    <table class="table task-buttons-table">
+                        <tr>
+                            <td>
+                                <label><input type="checkbox" class="hide-column" id="hide-column-1"> Hide Column 1</label>
+                            </td>
+                            <td>
+                                <label>
+                                    <input type="checkbox" class="hide-column" id="hide-column-2"> Hide Column 2
+                                </label>
+                            </td>
+                            <td><label>
+                                <input type="checkbox" class="hide-column" id="hide-column-3"> Hide Column 3
+                            </label></td>
+                            <td><label>
+                                <input type="checkbox" class="hide-column" id="hide-column-4"> Hide Column 4
+                            </label></td>
+                            <td><label>
+                                <input type="checkbox" class="hide-column" id="hide-column-5"> Hide Column 5
+                            </label></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="task-container">
+                    <table class="table table-striped task-data-table">
+                        <thead>
+                        <tr>
+                            <th class="no-sort"></th>
+                            <th>Column 1</th>
+                            <th>Column 2</th>
+                            <th>Column 3</th>
+                            <th>Column 4</th>
+                            <th>Column 5</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><input type="checkbox" value="1" data-id="1" data-type="choicesets" id="data-choicesets-1" class="check-final" /></td>
+                                <td>234</td>
+                                <td>543</td>
+                                <td>653</td>
+                                <td>678</td>
+                                <td>678</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" value="2" data-id="2" data-type="choicesets" id="data-choicesets-2" class="check-final" /></td>
+                                <td>432</td>
+                                <td>435</td>
+                                <td>344</td>
+                                <td>232</td>
+                                <td>554</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" value="3" data-id="3" data-type="choicesets" id="data-choicesets-3" class="check-final" /></td>
+                                <td>432</td>
+                                <td>435</td>
+                                <td>344</td>
+                                <td>232</td>
+                                <td>554</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" value="4" data-id="4" data-type="choicesets" id="data-choicesets-4" class="check-final" /></td>
+                                <td>432</td>
+                                <td>435</td>
+                                <td>344</td>
+                                <td>232</td>
+                                <td>554</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" value="5" data-id="5" data-type="choicesets" id="data-choicesets-5" class="check-final" /></td>
+                                <td>432</td>
+                                <td>435</td>
+                                <td>344</td>
+                                <td>232</td>
+                                <td>554</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" value="6" data-id="6" data-type="choicesets" id="data-choicesets-6" class="check-final" /></td>
+                                <td>432</td>
+                                <td>435</td>
+                                <td>344</td>
+                                <td>232</td>
+                                <td>554</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" value="7" data-id="7" data-type="choicesets" id="data-choicesets-7" class="check-final" /></td>
+                                <td>432</td>
+                                <td>435</td>
+                                <td>344</td>
+                                <td>232</td>
+                                <td>554</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" value="8" data-id="8" data-type="choicesets" id="data-choicesets-8" class="check-final" /></td>
+                                <td>432</td>
+                                <td>435</td>
+                                <td>344</td>
+                                <td>232</td>
+                                <td>554</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" value="9" data-id="9" data-type="choicesets" id="data-choicesets-9" class="check-final" /></td>
+                                <td>432</td>
+                                <td>435</td>
+                                <td>344</td>
+                                <td>232</td>
+                                <td>554</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" value="10" data-id="10" data-type="choicesets" id="data-choicesets-10" class="check-final" /></td>
+                                <td>432</td>
+                                <td>435</td>
+                                <td>344</td>
+                                <td>232</td>
+                                <td>554</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" value="11" data-id="11" data-type="choicesets" id="data-choicesets-11" class="check-final" /></td>
+                                <td>432</td>
+                                <td>435</td>
+                                <td>344</td>
+                                <td>232</td>
+                                <td>554</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" value="12" data-id="12" data-type="choicesets" id="data-choicesets-12" class="check-final" /></td>
+                                <td>432</td>
+                                <td>435</td>
+                                <td>344</td>
+                                <td>232</td>
+                                <td>554</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="task-recommendation">
+                            <h2>RECOMMENDATIONS</h2>
+                        </div>
+                        <div class="task-container">
+                            <table class="table table-striped task-recommendation-data-table">
+                                <thead>
+                                <tr>
+                                    <th class="no-sort"></th>
+                                    <th>Column 1</th>
+                                    <th>Column 2</th>
+                                    <th>Column 3</th>
+                                    <th>Column 4</th>
+                                    <th>Column 5</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><input type="checkbox" value="1" data-id="12" data-type="recommended" id="data-recommended-1" class="check-final" /></td>
+                                        <td>234</td>
+                                        <td>543</td>
+                                        <td>653</td>
+                                        <td>678</td>
+                                        <td>678</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox" value="2" data-type="recommended" id="data-recommended-2" class="check-final" /></td>
+                                        <td>234</td>
+                                        <td>543</td>
+                                        <td>653</td>
+                                        <td>678</td>
+                                        <td>678</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox" value="3" data-type="recommended" id="data-recommended-3" class="check-final" /></td>
+                                        <td>234</td>
+                                        <td>543</td>
+                                        <td>653</td>
+                                        <td>678</td>
+                                        <td>678</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox" value="4" data-type="recommended" id="data-recommended-4" class="check-final" /></td>
+                                        <td>234</td>
+                                        <td>543</td>
+                                        <td>653</td>
+                                        <td>678</td>
+                                        <td>678</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox" value="5" data-type="recommended" id="data-recommended-5" class="check-final" /></td>
+                                        <td>234</td>
+                                        <td>543</td>
+                                        <td>653</td>
+                                        <td>678</td>
+                                        <td>678</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox" value="6" data-type="recommended" id="data-recommended-6" class="check-final" /></td>
+                                        <td>234</td>
+                                        <td>543</td>
+                                        <td>653</td>
+                                        <td>678</td>
+                                        <td>678</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox" value="7" data-type="recommended" id="data-recommended-7" class="check-final" /></td>
+                                        <td>234</td>
+                                        <td>543</td>
+                                        <td>653</td>
+                                        <td>678</td>
+                                        <td>678</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox" value="8" data-type="recommended" id="data-recommended-8" class="check-final" /></td>
+                                        <td>234</td>
+                                        <td>543</td>
+                                        <td>653</td>
+                                        <td>678</td>
+                                        <td>678</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox" value="9" data-type="recommended" id="data-recommended-9" class="check-final" /></td>
+                                        <td>234</td>
+                                        <td>543</td>
+                                        <td>653</td>
+                                        <td>678</td>
+                                        <td>678</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox" value="10" data-type="recommended" id="data-recommended-10" class="check-final" /></td>
+                                        <td>234</td>
+                                        <td>543</td>
+                                        <td>653</td>
+                                        <td>678</td>
+                                        <td>678</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="task-final">
+                            <h2>FINAL SELECTION</h2>
+                        </div>
+                        <div class="task-container">
+                            <table  class="table table-striped task-final-data-table">
+                                <thead>
+                                <tr>
+                                    <th class="no-sort"></th>
+                                    <th>Column 1</th>
+                                    <th>Column 2</th>
+                                    <th>Column 3</th>
+                                    <th>Column 4</th>
+                                    <th>Column 5</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td><button type="button" id="data-item-123" data-id="123" class="choicesets-remove">x</button></td>
+                                    <td>234</td>
+                                    <td>543</td>
+                                    <td>653</td>
+                                    <td>678</td>
+                                    <td>678</td>
+                                </tr>
+                                <tr>
+                                    <td><button type="button" id="data-item-123" data-id="123" class="choicesets-remove"></button></td>
+                                    <td>234</td>
+                                    <td>543</td>
+                                    <td>653</td>
+                                    <td>678</td>
+                                    <td>678</td>
+                                </tr>
+                                <tr>
+                                    <td><button type="button" id="data-item-123" data-id="123" class="choicesets-remove"></button></td>
+                                    <td>234</td>
+                                    <td>543</td>
+                                    <td>653</td>
+                                    <td>678</td>
+                                    <td>678</td>
+                                </tr>
+                                <tr>
+                                    <td><button type="button" id="data-item-123" data-id="123" class="choicesets-remove"></button></td>
+                                    <td>234</td>
+                                    <td>543</td>
+                                    <td>653</td>
+                                    <td>678</td>
+                                    <td>678</td>
+                                </tr>
+                                <tr>
+                                    <td><button type="button" id="data-item-123" data-id="123" class="choicesets-remove"></button></td>
+                                    <td>234</td>
+                                    <td>543</td>
+                                    <td>653</td>
+                                    <td>678</td>
+                                    <td>678</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="task-proces">
+        <div class="row">
+            <div class="col-6 offset-6 text-right">
+                <a href="task.html" class="btn btn-primary start-button">PROCEED TO QUESTIONNAIRE</a>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
